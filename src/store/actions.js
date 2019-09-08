@@ -54,3 +54,21 @@ export const setSearchingTrue = setSearch => ({
   setSearch,
 })
 
+export const showSearchDesc = searchDesc => ({
+  type: 'SHOW_SEARCH_DESC',
+  searchDesc,
+})
+
+export const aboutScrollAction = about => ({
+  type: 'ABOUT_SCROLL',
+  about,
+})
+
+export const contactScrollAction = contact => ({
+  type: 'CONTACT_SCROLL',
+  contact,
+})
+
+
+
+

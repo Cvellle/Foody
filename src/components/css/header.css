@@ -17,10 +17,10 @@
 }
 
 .headersearch {
-    /* border-radius: 0 !important;
+    border-radius: 0 !important;
     height:100%;
     margin-right:2vw;
-    background:transparent; */
+    background:transparent;
 }
 
 .loginForm {
@@ -84,6 +84,14 @@
     display: flex;
     justify-content: center;
     margin-top:-1.05vw;
+}
+
+.loged a {
+    margin-left:0.5vw;
+}
+
+.loged a:hover {
+    color:black;
 }
 
 

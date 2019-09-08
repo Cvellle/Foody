@@ -1,16 +1,12 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
-import Item from '../components/Item'
 import SingleCategory from '../components/SingleCategory'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from 'reactstrap';
 import headimg from '../images/himg.png';
 import team from '../images/team.jpg';
 import './css/home.css'
-import ReactDom from 'react-dom'
-import scrollTo from 'jquery';
-import $ from 'jquery'
+
 
 
 class Home extends React.Component {
@@ -18,10 +14,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      filtered: null,
-      sent:false,
-      about:false,
-      contact:false
+      sent:false
     }
   }
 
@@ -29,8 +22,8 @@ class Home extends React.Component {
     document.getElementById('homeLink').style.display="none";
     document.getElementById('img').style.display="block";
 
-    if(this.props.searchTrue) {this.refs.about.scrollIntoView({behavior: 'smooth'})}
-    if(this.state.contact) {this.refs.contact.scrollIntoView({behavior: 'smooth'})}
+    if(this.props.aboutScroll) {this.refs.about.scrollIntoView({behavior: 'smooth'})}
+    if(this.props.contactScroll) {this.refs.contact.scrollIntoView({behavior: 'smooth'})}
   }
 
   saveMessage = e => {
@@ -158,8 +151,8 @@ const MesageSent = () => {
 
 
 
-const mapStateToProps = ({filtered, loading, searchTrue}) => {
-  return {filtered, loading}
+const mapStateToProps = ({filtered, loading, about, contact, aboutScroll, contactScroll}) => {
+  return {filtered, loading, about, contact, aboutScroll, contactScroll}
 }
 
 export default connect(mapStateToProps)(Home)

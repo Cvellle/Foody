@@ -1,17 +1,15 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import Item from '../components/Item'
-import {filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue} from '../store/actions'
+import {filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue, showSearchDesc} from '../store/actions'
 import '../App.css'
-
+import './css/search.css'
 
 class Search extends Component {
   
     constructor(props) {
       super(props)
       this.state = {
-        filteredByCtg: [],
-        filteredByName: null,
         searching: true
       }
     }
@@ -47,12 +45,12 @@ class Search extends Component {
 
         return (
           <div  className="category">
-            <div class="d-md-flex justify-content-md-between">
+            <div class="d-md-flex justify-content-md-between position-relative">
               <div className="text-left abouttxt">
                 {/* <RandomItem/> */}
               </div>
               <div className="">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-outline-secondary dropdown-toggle buttonInSearch" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Category
                 </button>
                 <div class="dropdown-menu">
@@ -66,7 +64,7 @@ class Search extends Component {
 
             <div className="d-flex justify-content-center mx-auto">
               <div className="flex-wrapper mx-auto">
-                {this.props.seachTrue ? ListItemName : ListItemCat}
+                {this.props.searchTrue ? ListItemName : ListItemCat}
               </div>    
             </div>
           </div>
@@ -74,36 +72,12 @@ class Search extends Component {
     }
   
 }
-{/* <div  className="category">
-<h2 className="text-left categoryTitle">Search results</h2>
-<div class="d-md-flex justify-content-md-between">
-  <div className="text-left abouttxt">
-    <RandomItem/>
-  </div>
-  <div className="">
-    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-       Category
-    </button>
-    <div class="dropdown-menu">
-        <a class="dropdown-item" data-categ="beef" onClick={this.changeCategory} href="#">Beef</a>
-        <a class="dropdown-item" data-categ="chicken" onClick={this.changeCategory} href="#">Chicken</a>
-    </div>
-  </div>
-</div>
 
-<div className="lineSep"></div>  
 
-<div className="d-flex justify-content-center mx-auto">
-  <div className="flex-wrapper mx-auto">
-    {this.state.searching ? ListItemCat : ListItemName}
-  </div>
-  
-</div> */}
-
-const mapStateToProps = ({filtered, filtered2, loading, filteredByCatInSearch, seachTrue}) => {
-  return {filtered, filtered2, loading, filteredByCatInSearch, seachTrue}
+const mapStateToProps = ({filtered, filtered2, loading, filteredByCatInSearch, searchTrue, }) => {
+  return {filtered, filtered2, loading, filteredByCatInSearch, searchTrue}
 }
 
-const mapDispatchToProps = { filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue }
+const mapDispatchToProps = { filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue, showSearchDesc }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search)

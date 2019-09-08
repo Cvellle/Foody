@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import {fetchItems, filterItems} from '../store/actions'
 import './css/category.css'
 
 
@@ -7,7 +8,7 @@ import './css/category.css'
 class RandomItem extends Component {
 
   componentDidMount() {
-
+    // this.props.fetchItems()
   }
 
   componentWillUnmount() {
@@ -16,8 +17,7 @@ class RandomItem extends Component {
 
 
   render() {
-
-    const index = Math.floor((this.props.filtered.length - 1) * Math.random());
+    const index = Math.floor((this.props.items.length - 1) * Math.random());
     const el = this.props.filtered[index];
 
     return (
@@ -32,4 +32,7 @@ class RandomItem extends Component {
 
 const mapStateToProps = ({items, filtered}) => ({items, filtered})
 
-export default connect(mapStateToProps)(RandomItem)
+const mapDispatchToProps = { fetchItems, filterItems }
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(RandomItem)

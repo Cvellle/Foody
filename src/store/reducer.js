@@ -5,7 +5,10 @@ const initialState = {
   filtered2: [],
   filteredByCatInSearch: [],
   selected: null,
-  seachTrue: true
+  searchTrue: true,
+  searchDescritopn: false,
+  aboutScroll: false,
+  contactScroll: false
 }
 
 export const reducer = (state = initialState, action) => {
@@ -28,7 +31,13 @@ export const reducer = (state = initialState, action) => {
     case 'SELECT_ITEM':
       return { ...state,  selected: action.selected}
     case 'SET_SEARCH_TRUE':
-      return { ...state,  seachTrue: action.setSearch}  
+      return { ...state,  searchTrue: action.setSearch}  
+    case 'SHOW_SEARCH_DESC':
+        return { ...state,  searchDescritopn: action.searchDesc}  
+    case 'ABOUT_SCROLL':
+      return { ...state,  aboutScroll: action.about}  
+    case 'CONTACT_SCROLL':
+        return { ...state,  contactScroll: action.contact}  
     default:
       return state
   } 

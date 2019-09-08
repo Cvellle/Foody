@@ -19,13 +19,20 @@ class Item extends React.Component {
         <Link to={link}>
           <img alt="" src={this.props.el.image} />
         </Link>  
-        <p>{this.props.el.name}</p>
+        <p className="text-left pl-1">{this.props.el.name}</p>
+
+        {this.props.searchDescritopn ? <div className="searchDescr">
+          <div className="text-left pl-1">Category: {this.props.el.category}</div>
+          <div className="text-left pl-1">Country: {this.props.el.country}</div>
+        </div> : null}
+        
+       
       </div>
     )
   }
 }
 
-const mapStateToProps = ({selected}) => ({selected})
+const mapStateToProps = ({selected, searchTrue, searchDescritopn}) => ({selected, searchTrue, searchDescritopn})
 const mapDispatchToProps = { selectItem }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Item)

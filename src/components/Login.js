@@ -3,14 +3,17 @@ import {Link} from 'react-router-dom'
 import './css/header.css'
 import logimg from '../images/login.jpg';
 
+
+
 const Welcome = ({user, onSignOut})=> {
 
   return (
     <div className="loged">
-      <span>Loged in as: <strong> {user.username} </strong> </span>
-      <a href="javascript:;" onClick={onSignOut} className=""> Sign out</a>
+      <span>Logged in as: <strong> {user.username} </strong> </span>
+      <a href="javascript:;" onClick={onSignOut} className="">Sign out</a>
       <Link to={'/mymeals'}>
-        <span className="loged navL">My meals</span></Link>
+        <span className="loged navL">My meals</span>
+      </Link>
     </div>
   )
 }
@@ -36,11 +39,11 @@ class LoginForm extends React.Component {
         <div className="dropdown">
           <img ref="linkImg" src={logimg} className="loginImg navL dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/> 
           <div className="dropdown-menu border-0" aria-labelledby="dropdownMenuButton">
-            <div href="#" class="loginForm">
-              <form class="" onSubmit={this.handleSignIn.bind(this)}>
-                <input  class="d-block mx-auto txt" type="text" ref="username" placeholder="enter you username" value="user"/>
-                <input  class="d-block mx-auto txt" type="password" ref="password" placeholder="enter password" value="dummy"/>
-                <input type="submit" value="Login" class="d-block float-right log"/>
+            <div href="#" className="loginForm">
+              <form className="" onSubmit={this.handleSignIn.bind(this)}>
+                <input className="d-block mx-auto txt" type="text" ref="username" placeholder="enter you username" value="user"/>
+                <input className="d-block mx-auto txt" type="password" ref="password" placeholder="enter password" value="dummy"/>
+                <input type="submit" value="Login" className="d-block float-right log"/>
               </form>  
             </div>
           </div>
@@ -74,13 +77,14 @@ class Login extends React.Component {
   }
 
   signIn(username, password) {
-
-    this.setState({
-      user: {
-        username,
-        password,
-      }
-    })
+    if (username === "user" && password === "dummy"){
+      this.setState({
+        user: {
+          username,
+          password,
+        }
+      })
+    }
   }
   
   signOut() {
@@ -104,10 +108,8 @@ class Login extends React.Component {
             />
         }
       </div>
-    )
-    
-  }
-  
+    )    
+  } 
 }
 
 

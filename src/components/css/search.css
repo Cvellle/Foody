@@ -1,0 +1,15 @@
+
+.buttonInSearch {
+    position: absolute;
+    bottom:-4vw;
+    right:1vw;
+    height:2vw;
+    font-size: 0.8vw;
+    border-radius: 0.9;
+    width:7vw;
+    padding-left:0vw;
+}
+
+.dropdown-toggle::after {
+    transform: translate(1vw ,0.1vw)
+}

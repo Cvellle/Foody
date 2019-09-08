@@ -46,6 +46,7 @@
 
 .item {
     padding:1vw !important;
+    margin-bottom:3vw;
 }
 
 .item img {
@@ -54,7 +55,13 @@
 }
 
 .item p {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    height:2vw;
+}
+
+.searchDescr {
+    font-size: 1vw;
+    height:2vw;
 }
 
 

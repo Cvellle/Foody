@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import Item from '../components/Item'
 import RandomItem from '../components/RandomItem'
-import {fetchItems, filterItems} from '../store/actions'
+import {fetchItems, filterItems, showSearchDesc} from '../store/actions'
 import './css/category.css'
 import '../App.css'
 
@@ -25,11 +25,8 @@ class Category extends Component {
       document.getElementById('homeLink').style.display="block";
       document.getElementById('img').style.display="none";
       // this.props.fetchItems()
+      this.props.showSearchDesc(false)
     }  
-
-    componentWillUnmount() {
-
-    }
 
     render() {
         const ListItem = this.props.filtered.map(it => 
@@ -40,12 +37,12 @@ class Category extends Component {
             <Item el={it} key={it.id} className="listItem"/>
       )
 
-        const categoryTitle = this.props.filtered[1].category.charAt(0).toUpperCase() + this.props.filtered[1].category.slice(1);
+        // const categoryTitle = this.props.filtered[1].category.charAt(0).toUpperCase() + this.props.filtered[1].category.slice(1);
         
       
       return (
           <div  className="category">
-            <h2 className="text-left categoryTitle">{categoryTitle}</h2>
+            {/* <h2 className="text-left categoryTitle">{categoryTitle}</h2> */}
             <div class="d-md-flex justify-content-md-between">
               <div className="text-left abouttxt">
                 <RandomItem/>
@@ -81,6 +78,6 @@ const mapStateToProps = ({filtered, filtered2, loading}) => {
   return {filtered, filtered2, loading}
 }
 
-const mapDispatchToProps = { fetchItems, filterItems }
+const mapDispatchToProps = { fetchItems, filterItems, showSearchDesc }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Category)
