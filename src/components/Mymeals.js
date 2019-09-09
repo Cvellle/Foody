@@ -51,13 +51,15 @@ class Mymeals extends Component {
           <div  className="category search mymeals">
             <div className="d-flex justify-content-center mx-auto" ref="list">
               <div className="flex-wrapper mx-auto">
-              <RandomInSearch/>
-              <RandomInSearch/>
-              <RandomInSearch/>
-              <RandomInSearch/>
-              <RandomInSearch/>
-              <RandomInSearch/>
-              <RandomInSearch/>
+                  <div className="col-sm-4">
+                      <RandomInSearch/> 
+                  </div>
+                  <div className="col-sm-4">
+                      <RandomInSearch/> 
+                  </div>
+                  <div className="col-sm-4">
+                      <RandomInSearch/> 
+                  </div>
               </div>    
             </div>
           </div>

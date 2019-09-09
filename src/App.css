@@ -32,3 +32,8 @@
 .mymeals .recomm {
   display: none;
 }
+
+.mymeals img {
+  width:26vw;
+  height:20vw;
+}
