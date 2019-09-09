@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import Item from '../components/Item'
-import {filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue, showSearchDesc} from '../store/actions'
+import RandomInSearch from '../components/RandomInSearch'
+import {filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue, showSearchDesc, homeSrollAction} from '../store/actions'
 import '../App.css'
 import './css/search.css'
+import './css/category.css'
+
+
+
 
 class Search extends Component {
   
@@ -15,8 +20,12 @@ class Search extends Component {
     }
 
     componentDidMount() {
-      this.setState({searching: true});
-    }
+      // this.setState({searching: true});
+      // this.props.homeSrollAction(false)
+      document.getElementById('homeLink').style.display="block";
+      document.getElementById('img').style.display="none";
+    }  
+
 
     changeCategory = e => {
       this.props.fiterByCatInSearch(e.target.dataset.categ);
@@ -29,11 +38,6 @@ class Search extends Component {
       this.setState({searching: true});
     }
 
-    componentDidMount() {
-      document.getElementById('homeLink').style.display="block";
-      document.getElementById('img').style.display="none";
-    }  
-
     render() {
         const ListItemCat = this.props.filteredByCatInSearch.map(it => 
             <Item el={it} key={it.id} className="listItem" />
@@ -44,25 +48,25 @@ class Search extends Component {
       )
 
         return (
-          <div  className="category">
+          <div  className="category search">
             <div class="d-md-flex justify-content-md-between position-relative">
               <div className="text-left abouttxt">
-                {/* <RandomItem/> */}
-              </div>
-              <div className="">
-                <button class="btn btn-outline-secondary dropdown-toggle buttonInSearch" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Category
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" data-categ="beef" onClick={this.changeCategory} href="#">Beef</a>
-                    <a class="dropdown-item" data-categ="chicken" onClick={this.changeCategory} href="#">Chicken</a>
-                </div>
+                <p className="searchRes">Search Results</p>
+                 <RandomInSearch/>
               </div>
             </div>
 
-            <div className="lineSep"></div>  
+            <div className="lineSep">
+              <button className="btn btn-outline-secondary dropdown-toggle buttonInSearch" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Category
+              </button>
+              <div className="dropdown-menu">
+                  <div className="dropdown-item" data-categ="beef" onClick={this.changeCategory.bind(this)} href="#">Beef</div>
+                  <div className="dropdown-item" data-categ="chicken" onClick={this.changeCategory.bind(this)} href="#">Chicken</div>
+              </div>
+            </div>  
 
-            <div className="d-flex justify-content-center mx-auto">
+            <div className="d-flex justify-content-center mx-auto" ref="list">
               <div className="flex-wrapper mx-auto">
                 {this.props.searchTrue ? ListItemName : ListItemCat}
               </div>    
@@ -74,10 +78,10 @@ class Search extends Component {
 }
 
 
-const mapStateToProps = ({filtered, filtered2, loading, filteredByCatInSearch, searchTrue, }) => {
+const mapStateToProps = ({filtered, filtered2, loading, filteredByCatInSearch, searchTrue }) => {
   return {filtered, filtered2, loading, filteredByCatInSearch, searchTrue}
 }
 
-const mapDispatchToProps = { filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue, showSearchDesc }
+const mapDispatchToProps = { filterItems, fiterByCategory, fiterByCatInSearch, setSearchingTrue, showSearchDesc, homeSrollAction }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search)

@@ -8,7 +8,8 @@ const initialState = {
   searchTrue: true,
   searchDescritopn: false,
   aboutScroll: false,
-  contactScroll: false
+  contactScroll: false,
+  homeScroll:true
 }
 
 export const reducer = (state = initialState, action) => {
@@ -38,6 +39,8 @@ export const reducer = (state = initialState, action) => {
       return { ...state,  aboutScroll: action.about}  
     case 'CONTACT_SCROLL':
         return { ...state,  contactScroll: action.contact}  
+      case 'HOME_SCROLL':
+        return { ...state,  homeScroll: action.homescr}  
     default:
       return state
   } 

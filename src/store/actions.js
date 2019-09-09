@@ -1,7 +1,7 @@
 
 
 export const fetchItems = () => dispatch => {
-  const url = "https://www.json-generator.com/api/json/get/bQITGDYWhu?indent=2";
+  const url = "http://www.json-generator.com/api/json/get/cfExNcFElK?indent=2";
   return fetch(url)
     .then(response => response.json())
     .then(json => {
@@ -49,6 +49,12 @@ export const selectItem = selected => ({
   selected,
 })
 
+export const clickItem = (selected) => dispatch => {
+  dispatch(selectItem(selected))
+  dispatch(fiterByCategory(selected.category))
+}
+
+
 export const setSearchingTrue = setSearch => ({
   type: 'SET_SEARCH_TRUE',
   setSearch,
@@ -67,6 +73,11 @@ export const aboutScrollAction = about => ({
 export const contactScrollAction = contact => ({
   type: 'CONTACT_SCROLL',
   contact,
+})
+
+export const homeSrollAction = homescr => ({
+  type: 'HOME_SCROLL',
+  homescr,
 })
 
 

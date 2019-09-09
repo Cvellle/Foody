@@ -24,3 +24,11 @@
 .min {
   min-height:65vh;
 }
+
+.mymeals {
+  margin-top: 10vw;
+}
+
+.mymeals .recomm {
+  display: none;
+}

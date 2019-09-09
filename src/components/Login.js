@@ -41,8 +41,8 @@ class LoginForm extends React.Component {
           <div className="dropdown-menu border-0" aria-labelledby="dropdownMenuButton">
             <div href="#" className="loginForm">
               <form className="" onSubmit={this.handleSignIn.bind(this)}>
-                <input className="d-block mx-auto txt" type="text" ref="username" placeholder="enter you username" value="user"/>
-                <input className="d-block mx-auto txt" type="password" ref="password" placeholder="enter password" value="dummy"/>
+                <input className="d-block mx-auto txt" type="text" ref="username" placeholder="enter you username"/>
+                <input className="d-block mx-auto txt" type="password" ref="password" placeholder="enter password"/>
                 <input type="submit" value="Login" className="d-block float-right log"/>
               </form>  
             </div>

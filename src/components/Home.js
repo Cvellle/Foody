@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import SingleCategory from '../components/SingleCategory'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from 'reactstrap';
+import {homeSrollAction} from '../store/actions'
 import headimg from '../images/himg.png';
 import team from '../images/team.jpg';
 import './css/home.css'
@@ -24,6 +25,8 @@ class Home extends React.Component {
 
     if(this.props.aboutScroll) {this.refs.about.scrollIntoView({behavior: 'smooth'})}
     if(this.props.contactScroll) {this.refs.contact.scrollIntoView({behavior: 'smooth'})}
+
+    this.props.homeSrollAction(true)
   }
 
   saveMessage = e => {
@@ -43,8 +46,8 @@ class Home extends React.Component {
     })
   }
   
-  scroll() {
-    this.refs.contact.scrollIntoView({behavior: 'smooth'})
+  scroll(ref) {
+    this.refs.category.scrollIntoView({behavior: 'smooth'})
   }
 
   render() {
@@ -57,7 +60,7 @@ class Home extends React.Component {
             <Col xs="12" sm="6" className="text-left align-self-center p-0">
               <div>
                 <h1 className="align-self-center">Food Recipes</h1>
-                <p className="align-self-center">
+                <p className="align-self-center mainDescr">
                   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum<br/>
                   Loremlin ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br/>
                   Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem <br/>
@@ -69,14 +72,12 @@ class Home extends React.Component {
               <img  xs="12" sm="6" src={headimg} className="d-sm-block d-flex justify-content-end"/>
             </Col>
           </div>          
-          {/* <Link to={'/category'} className="align-self"> */}
-            <button onClick={this.scroll} className="categoryBtn">
+            <button onClick={this.scroll.bind(this)} className="categoryBtn">
               Categories <span className="rotate d-inline-block">&rsaquo;</span>
             </button>
-          {/* </Link> */}
         </div>
         
-        <div className="categories" ref="categ">
+        <div className="categories" ref="category" id="category">
           <Row>
               <Col xs="12" sm="3"><SingleCategory data="Beef" className=""/></Col>
               <Col xs="12" sm="3"><SingleCategory data="Beef" className=""/></Col>
@@ -91,7 +92,7 @@ class Home extends React.Component {
           </Row>
         </div>
 
-        <div className="about" ref="about">
+        <div className="about" ref="about" id="about">
           <h2 className="text-md-left">About Us</h2>
           <div class="dash mx-auto mx-md-0"></div>
           <div class="d-md-flex justify-content-md-between">
@@ -104,14 +105,14 @@ class Home extends React.Component {
           </div>
         </div>
 
-        <div className="contact" ref="contact">
+        <div className="contact" ref="contact" id="contact">
           <h2 className="text-center">Contact</h2>
           <div class="dash-cont d-block mx-auto"></div>
         </div>
 
         { 
           (this.state.sent) ? 
-            <MesageSent/>
+          <MesageSent/>
           :
           <div className="formHeight">
             <div className="contact d-flex justify-content-center">
@@ -151,8 +152,10 @@ const MesageSent = () => {
 
 
 
-const mapStateToProps = ({filtered, loading, about, contact, aboutScroll, contactScroll}) => {
-  return {filtered, loading, about, contact, aboutScroll, contactScroll}
+const mapStateToProps = ({filtered, loading, about, contact, aboutScroll, contactScroll, homeScroll}) => {
+  return {filtered, loading, about, contact, aboutScroll, contactScroll, homeScroll}
 }
 
-export default connect(mapStateToProps)(Home)
+const mapDispatchToProps = { homeSrollAction }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
