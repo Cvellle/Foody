@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import './css/category.css'
-
+import '../App.css'
 
 
 class RandomInSearch extends Component {
@@ -14,7 +14,7 @@ class RandomInSearch extends Component {
     return (
       <div className="randomItem">       
         <p className="recomm">Our recommendation</p>
-        <img src={el.image}/> 
+        <img src={el.image} className="mymealsImg"/> 
         <p className="text-left randomName">{el.name}</p>
         <p className="text-left randomDetails">Categoty: {el.category}</p>
         <p className="text-left randomDetails">Country: {el.country}</p>        

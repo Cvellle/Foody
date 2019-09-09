@@ -30,7 +30,6 @@ h1 {
     height:3vw;
     width:10vw;
     font-weight: 600;
-
 }
 
 .categories {
@@ -127,6 +126,10 @@ h2 {
         height:10vw;
     }
 
+    .categoryLink strong {
+        font-size:4vw !important;
+    }
+
     .categories img {
         width:80vw;
     }
@@ -164,6 +167,19 @@ h2 {
 
     .mainDescr {
         font-size: 1.5vw;
+    }
+
+    .categoryBtn {
+        position: absolute;
+        bottom:0vw !important;
+        left:10vw;
+        background:#f9982d;
+        color:white;
+        border-radius: 0.8rem;
+        border:none;
+        height:3vw;
+        width:14vw;
+        font-weight: 600;
     }
 
 }

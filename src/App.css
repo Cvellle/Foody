@@ -37,3 +37,12 @@
   width:26vw;
   height:20vw;
 }
+
+@media screen and (max-width:500px) {
+
+  .mymeals img {
+    width:90vw;
+    height:60vw;
+  }
+  
+}

@@ -61,7 +61,7 @@ class Meal extends React.Component {
             <td>{this.props.selected.amount}</td>
           </tr>
         </table>
-
+        <h3 className="text-left">Similar meals</h3>
         <div className="d-flex justify-content-center mx-auto random-list">
           <div className="flex-wrapper mx-auto">
             <div className="col-sm-4 item">      

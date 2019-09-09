@@ -22,7 +22,7 @@
 
  table {
      margin-top: 4vw;
-     margin-bottom: 4vw;
+     margin-bottom: 8vw;
  }
 
  table, th, td {
@@ -47,6 +47,9 @@
 
   .random-list .recomm {
     display: none;
+}
+h3 {
+    margin-bottom: -1vw;
 }
 
 a:hover {
