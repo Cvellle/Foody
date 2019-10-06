@@ -8,8 +8,6 @@ import headimg from '../images/himg.png';
 import team from '../images/team.jpg';
 import './css/home.css'
 
-
-
 class Home extends React.Component {
 
   constructor(props) {
@@ -23,8 +21,8 @@ class Home extends React.Component {
     document.getElementById('homeLink').style.display="none";
     document.getElementById('img').style.display="block";
 
-    if(this.props.aboutScroll) {this.refs.about.scrollIntoView({behavior: 'smooth'})}
-    if(this.props.contactScroll) {this.refs.contact.scrollIntoView({behavior: 'smooth'})}
+    if (this.props.aboutScroll) {this.refs.about.scrollIntoView({behavior: 'smooth'})}
+    if (this.props.contactScroll) {this.refs.contact.scrollIntoView({behavior: 'smooth'})}
 
     this.props.homeSrollAction(true)
   }
@@ -46,7 +44,7 @@ class Home extends React.Component {
     })
   }
   
-  scroll(ref) {
+  scroll() {
     this.refs.category.scrollIntoView({behavior: 'smooth'})
   }
 
@@ -134,11 +132,9 @@ class Home extends React.Component {
             </div>     
           </div>
         }
-
       </div>
     )
   }
-
 }
 
 const MesageSent = () => {
@@ -149,8 +145,6 @@ const MesageSent = () => {
     </div>
   )
 }
-
-
 
 const mapStateToProps = ({filtered, loading, about, contact, aboutScroll, contactScroll, homeScroll}) => {
   return {filtered, loading, about, contact, aboutScroll, contactScroll, homeScroll}

@@ -2,11 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import {filterItems} from '../store/actions'
-import {fiterByCatInSearch, setSearchingTrue, showSearchDesc, aboutScrollAction, contactScrollAction, homeSrollAction} from '../store/actions'
+import {fiterByCatInSearch, setSearchingTrue, showSearchDesc, aboutScrollAction, contactScrollAction, homeSrollAction, filterItemsSearch} from '../store/actions'
 import Login from '../components/Login'
 import './css/header.css'
-
-
 
 class Header extends React.Component {
 
@@ -22,11 +20,17 @@ class Header extends React.Component {
   }
 
   scrollAbout() {
-    this.props.homeScroll ? document.getElementById('about').scrollIntoView({behavior: 'smooth'}) : this.props.aboutScrollAction(true); this.props.contactScrollAction(false)
+    this.props.homeScroll ? 
+      document.getElementById('about').scrollIntoView({behavior: 'smooth'}) : 
+      this.props.aboutScrollAction(true);
+    this.props.contactScrollAction(false)
   }
 
   scrollContact() {
-    this.props.homeScroll ? document.getElementById('contact').scrollIntoView({behavior: 'smooth'}) : this.props.aboutScrollAction(false); this.props.contactScrollAction(true)    
+    this.props.homeScroll ?
+      document.getElementById('contact').scrollIntoView({behavior: 'smooth'}) :
+      this.props.aboutScrollAction(false);
+    this.props.contactScrollAction(true)    
   }
 
   removeScroll() {
@@ -37,7 +41,7 @@ class Header extends React.Component {
 
 
   search = e => {
-    this.props.filterItems(e.target.value);
+    this.props.filterItemsSearch(e.target.value);
     this.props.setSearchingTrue(true);
     this.props.showSearchDesc(true)
     this.props.homeSrollAction(false)
@@ -72,6 +76,16 @@ class Header extends React.Component {
 }
 
 const mapStateToProps = ({selectedItem, homeScroll}) => ({selectedItem, homeScroll})
-const mapDispatchToProps = { filterItems, fiterByCatInSearch, setSearchingTrue, showSearchDesc, aboutScrollAction, contactScrollAction, homeSrollAction }
+
+const mapDispatchToProps = {
+  filterItems,
+  fiterByCatInSearch,
+  setSearchingTrue,
+  showSearchDesc,
+  aboutScrollAction,
+  contactScrollAction,
+  homeSrollAction,
+  filterItemsSearch
+ }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)

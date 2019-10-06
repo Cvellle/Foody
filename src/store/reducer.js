@@ -1,15 +1,18 @@
+import cashedItems from '../data/items.json'
+
 const initialState = {
-  loading: false,
-  items: [],
-  filtered: [],
+  loading: true,
+  items: cashedItems,
+  filtered: JSON.parse(localStorage.getItem("category-foody")),
   filtered2: [],
-  filteredByCatInSearch: [],
-  selected: null,
+  selected: JSON.parse(localStorage.getItem("selected-foody")),
   searchTrue: true,
   searchDescritopn: false,
   aboutScroll: false,
   contactScroll: false,
-  homeScroll:true
+  homeScroll:true,
+  filteredInSearch: [],
+  filteredByCatInSearch: []
 }
 
 export const reducer = (state = initialState, action) => {
@@ -26,9 +29,12 @@ export const reducer = (state = initialState, action) => {
     case 'FILTER_ITEMS':
       const filtered2 = state.filtered.filter(ob => ob.name.toLowerCase().includes(action.critreria))
       return { ...state,  filtered2}
+    case 'FILTER_ITEMS_SEARCH':
+      const filteredInSearch = state.items.filter(ob => ob.name.toLowerCase().includes(action.fiterSearch))
+      return { ...state,  filteredInSearch}
     case 'FILTER_BY_CAT_IN_SEARCH':
-      const filteredByCatInSearch = state.filtered2.filter(ob => ob.category.toLowerCase().includes(action.ctg))
-      return { ...state,  filteredByCatInSearch}
+      const filteredByCatInSearch = state.filteredInSearch.filter(ob => ob.category.toLowerCase().includes(action.ctg))
+      return { ...state,  filteredByCatInSearch}   
     case 'SELECT_ITEM':
       return { ...state,  selected: action.selected}
     case 'SET_SEARCH_TRUE':

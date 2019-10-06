@@ -1,11 +1,8 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import './css/category.css'
-
-
+import './css/random.css'
 
 class RandomItem extends Component {
-
 
   render() {
     const index = Math.floor((this.props.filtered.length - 1) * Math.random());
@@ -22,6 +19,5 @@ class RandomItem extends Component {
 }
 
 const mapStateToProps = ({items, filtered}) => ({items, filtered})
-
 
 export default connect(mapStateToProps)(RandomItem)

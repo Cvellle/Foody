@@ -1,12 +1,11 @@
 
-
 export const fetchItems = () => dispatch => {
-  const url = "https://www.json-generator.com/api/json/get/cfExNcFElK?indent=2";
+  const url = "https://www.json-generator.com/api/json/get/coAAXXqopu?indent=2";
   return fetch(url)
     .then(response => response.json())
     .then(json => {
       dispatch(setItems(json))
-      dispatch(setFiltered(json))
+      dispatch(setLoading(false))
     })
 }
 
@@ -39,6 +38,11 @@ export const filterItems = critreria => ({
   critreria,
 })
 
+export const filterItemsSearch = fiterSearch => ({
+  type: 'FILTER_ITEMS_SEARCH',
+  fiterSearch,
+})
+
 export const fiterByCatInSearch = ctg => ({
   type: 'FILTER_BY_CAT_IN_SEARCH',
   ctg,
@@ -51,9 +55,7 @@ export const selectItem = selected => ({
 
 export const clickItem = (selected) => dispatch => {
   dispatch(selectItem(selected))
-  dispatch(fiterByCategory(selected.category))
 }
-
 
 export const setSearchingTrue = setSearch => ({
   type: 'SET_SEARCH_TRUE',

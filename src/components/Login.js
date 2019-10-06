@@ -3,8 +3,6 @@ import {Link} from 'react-router-dom'
 import './css/header.css'
 import logimg from '../images/login.jpg';
 
-
-
 const Welcome = ({user, onSignOut})=> {
 
   return (
@@ -33,26 +31,23 @@ class LoginForm extends React.Component {
   }
   
   render() {
-    return (
-      
+    return (   
       <div className="login">
         <div className="dropdown">
           <img ref="linkImg" src={logimg} className="loginImg navL dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/> 
           <div className="dropdown-menu border-0" aria-labelledby="dropdownMenuButton">
             <div href="#" className="loginForm">
               <form className="" onSubmit={this.handleSignIn.bind(this)}>
-                <input className="d-block mx-auto txt" type="text" ref="username" placeholder="enter you username"/>
-                <input className="d-block mx-auto txt" type="password" ref="password" placeholder="enter password"/>
+              <input className="d-block mx-auto txt" type="text" ref="username" placeholder="Username"/>
+                <input className="d-block mx-auto txt" type="password" ref="password" placeholder="Password"/>
                 <input type="submit" value="Login" className="d-block float-right log"/>
               </form>  
             </div>
           </div>
         </div>
       </div>
-      
     )
   }
-
 }
 
 
@@ -111,7 +106,5 @@ class Login extends React.Component {
     )    
   } 
 }
-
-
 
 export default Login

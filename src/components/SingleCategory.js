@@ -10,10 +10,6 @@ import './css/home.css'
 class singleCategory extends React.Component {
 
   selectCateg(e) {
-    // const cat = e.target.dataset.category;
-    const cat = this.props.filtered;
-
-    localStorage.setItem("category", cat);
     this.props.fiterByCategory(e.target.dataset.category.toLowerCase())
   }
 
@@ -37,6 +33,6 @@ class singleCategory extends React.Component {
 
 
 const mapStateToProps = ({filtered}) => ({filtered})
-const mapDispatchToProps = { selectItem, filterItems, fiterByCategory }
+const mapDispatchToProps = { selectItem, fiterByCategory, filterItems }
 
 export default connect(mapStateToProps, mapDispatchToProps)(singleCategory)

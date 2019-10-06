@@ -4,9 +4,7 @@ import logo from '../images/LOGO.png';
 import fb from '../images/FB.png';
 import insta from '../images/INSTA.png';
 
-
-
-const Footer = props => {
+const Footer = () => {
   return (
     <footer className="footer">
         <div class="d-sm-flex justify-content-md-between">

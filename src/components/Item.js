@@ -4,11 +4,12 @@ import {Link} from 'react-router-dom'
 import {selectItem, clickItem} from '../store/actions'
 import './css/category.css'
 
-
 class Item extends React.Component {
 
   selecteMe = e => {
     this.props.clickItem(this.props.el)
+    const element = this.props.el;
+    localStorage.setItem("selected-foody", JSON.stringify(element));
   }
 
   render() {
@@ -33,8 +34,6 @@ class Item extends React.Component {
     )
   }
 }
-
-
 
 const mapStateToProps = ({selected, searchTrue, searchDescritopn}) => ({selected, searchTrue, searchDescritopn})
 const mapDispatchToProps = { selectItem, clickItem }

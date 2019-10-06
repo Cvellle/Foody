@@ -1,11 +1,8 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import './css/category.css'
-import '../App.css'
-
+import './css/random.css'
 
 class RandomInSearch extends Component {
-
 
   render() {
     const index = Math.floor((this.props.items.length - 1) * Math.random());
@@ -24,6 +21,5 @@ class RandomInSearch extends Component {
 }
 
 const mapStateToProps = ({items}) => ({items})
-
 
 export default connect(mapStateToProps)(RandomInSearch)
