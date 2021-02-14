@@ -13,7 +13,7 @@ Food recipes app
 :octocat:
 
 ```
-git clone hhttps://github.com/Cvellle/Foody.git
+git clone https://github.com/Cvellle/Foody.git
 ```
 
 ## Terminal instructions
