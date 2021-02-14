@@ -1,4 +1,4 @@
-# Good-choice
+# Foody
 
 Food recipes app
 
