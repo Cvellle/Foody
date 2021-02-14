@@ -1,5 +1,5 @@
 export const fetchItems = () => (dispatch) => {
-  const url = "https://www.json-generator.com/api/json/get/cgcVysGihu?indent=2";
+  const url = "data/items.json";
   return fetch(url)
     .then((response) => response.json())
     .then((json) => {

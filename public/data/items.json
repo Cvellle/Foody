@@ -1,8 +1,8 @@
 [
   {
-    "category": "chicken",
+    "category": "dessert",
     "description": "A delicious baked dessert that takes 5 minutes to make!",
-    "name": "Tal’s Tahini “bread pudding”",
+    "name": "Tal\u2019s Tahini \u201cbread pudding\u201d",
     "country": "Japan",
     "image": "http://forkgasm.com/images/bread-pudding.png",
     "amount": "2 spoons",
@@ -25,9 +25,7 @@
         "description": "Done, enjoy! We actually eat it with a spoon straight from the cake tray!"
       }
     ],
-    "tag": [
-      "Dessert"
-    ],
+    "tag": ["Dessert"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "notes": "- If you are not avoiding carbs, you can substitute the maple extract with maple syrup.\n- Other ingredients we've tried (not all at once!): cardamom, Grand Marnier, vanilla extract. Feel free to experiment!",
     "forked": "My friend Tal's \"tahini bread\" recipe.",
@@ -74,7 +72,7 @@
     ]
   },
   {
-    "category": "beef",
+    "category": "dessert",
     "description": "Easy and decadent!",
     "name": "Grand Marnier & Coffee Ice Cream",
     "country": "Japan",
@@ -98,10 +96,7 @@
     ],
     "id": "grand-marnier-coffee-ice-cream",
     "amount": "2 cups",
-    "tag": [
-      "Dessert",
-      "Ice Cream"
-    ],
+    "tag": ["Dessert", "Ice Cream"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "image": "https://forkgasm.com/images/grand-marnier-ice-cream.jpg",
     "forked": "[Coffee Grand Marnier Ice Cream](http://www.ronniefein.com/blog/coffee-grand-marnier-ice-cream)",
@@ -148,7 +143,7 @@
     ]
   },
   {
-    "category": "beef",
+    "category": "pork",
     "description": "A healthier version of the classic dish that tastes just as good!",
     "name": "Turnip Noodle Carbonara",
     "country": "Japan",
@@ -157,7 +152,7 @@
     "ingredientGroup": [],
     "step": [
       {
-        "description": "Cut the bacon into lardons and sauté until it's lightly cooked."
+        "description": "Cut the bacon into lardons and saut\u00e9 until it's lightly cooked."
       },
       {
         "description": "While the bacon is cooking, separate the yolks from 4 of the eggs. Whisk 4 yolks, 1 egg, the grated parmesan, the cream, and salt and pepper."
@@ -175,9 +170,7 @@
         "description": "Top with a little more ground pepper and serve!"
       }
     ],
-    "tag": [
-      "Bacon"
-    ],
+    "tag": ["Bacon"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "notes": "Turnip noodles are far closer to spaghetti than zucchini noodles that lose their shape. You can get them pre-spiralized from Whole Foods, or make them yourself with a spiralizer.",
     "forked": "[Zucchini Noodle Carbonara Recipe](https://skinnyms.com/zucchini-noodle-carbonara-recipe/)",
@@ -224,135 +217,6 @@
   },
   {
     "category": "beef",
-    "description": "Delicious, refreshing, and super quick to make!",
-    "name": "Spiced lamb chops with mint-mango sauce",
-    "country": "Japan",
-    "image": "http://forkgasm.com/images/40813912_2213541505597183_7740637805202109577_n.jpg",
-    "amount": "2 cups",
-    "ingredientGroup": [
-      {
-        "name": "Mint-Mango Sauce",
-        "ingredient": [
-          {
-            "amount": 1,
-            "name": "medium ripe mango"
-          },
-          {
-            "amount": 1,
-            "name": "fresh mint",
-            "unit": "cup"
-          },
-          {
-            "amount": 2,
-            "name": "green onions"
-          },
-          {
-            "amount": 1,
-            "name": "fresh lime juice",
-            "unit": "tbsp"
-          },
-          {
-            "preparation": "halved and seeded",
-            "amount": 1,
-            "name": "serrano chile"
-          },
-          {
-            "amount": 0.5,
-            "name": "ripe avocado"
-          }
-        ]
-      },
-      {
-        "name": "Spice mix",
-        "ingredient": [
-          {
-            "preparation": "ground",
-            "amount": 1,
-            "name": "cumin",
-            "unit": "tbsp"
-          },
-          {
-            "amount": 2,
-            "name": "ground coriander",
-            "unit": "tsp"
-          },
-          {
-            "amount": 2,
-            "name": "ground cinammon",
-            "unit": "tsp"
-          },
-          {
-            "amount": 0.5,
-            "name": "turmeric",
-            "unit": "tsp"
-          },
-          {
-            "amount": 0.25,
-            "name": "cayenne pepper",
-            "unit": "tsp"
-          },
-          {
-            "amount": 0.25,
-            "name": "ground cardamom",
-            "unit": "tsp"
-          },
-          {
-            "preparation": "ground",
-            "amount": 0.125,
-            "name": "cloves",
-            "unit": "tsp"
-          },
-          {
-            "amount": 0.5,
-            "name": "coarse kosher salt",
-            "unit": "tbsp"
-          }
-        ]
-      }
-    ],
-    "step": [
-      {
-        "description": "In a blender or mini food processor, blend all the sauce ingredients, and chill in the fridge."
-      },
-      {
-        "description": "Blend the olive oil and garlic and coat the lamb chops."
-      },
-      {
-        "description": "Make the spice mix, and coat the lamb chops well on both sides."
-      },
-      {
-        "description": "Grill the lamb chops on a very hot cast iron grill pan (or a BBQ if you have one!) for 2-3 minutes on each side for medium rare."
-      },
-      {
-        "description": "Done! Serve with the sauce on the side."
-      }
-    ],
-    "tag": [
-      "Lamb"
-    ],
-    "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
-    "notes": "- If you’re out of green onions, you can substitute them in the sauce with 1 shallot\n- A good way to use the spice mix is to put it in an empty spice jar and use that to sprinkle it evenly on the lamb chops.\n- This spice mix is delicious and great on so many things! We've tried it on beef, duck, even carbonara! Might be a good idea to make more than is needed for this dish and keep it around.\n- If you have sauce leftovers, it keeps well in the fridge for days in an airtight container. It may darken a bit due to the avocado but it still tastes good.",
-    "forked": "[Spiced Lamb Chops with Mint-Mango Sauce](https://www.epicurious.com/recipes/food/views/spiced-lamb-chops-with-mint-mango-sauce-109587)",
-    "id": "spiced-lamb-chops-with-mint-mango-sauce",
-    "ingr": "sauce",
-    "ingredient": [
-      {
-        "amount": 8,
-        "name": "lamb chops"
-      },
-      {
-        "amount": 0.25,
-        "name": "olive oil",
-        "unit": "cup"
-      },
-      {
-        "amount": 4,
-        "name": "garlic cloves"
-      }
-    ]
-  },
-  {
-    "category": "beef",
     "description": "A traditional Greek dish that tastes very similar to moussaka, but is much quicker to cook. Fun fact: Papoutsakia in Greek means \"little shoes\" and a portion usually has two. However, when cooking with large American eggplants, you'll likely find that one per portion is enough.",
     "name": "Papoutsakia",
     "country": "Japan",
@@ -370,88 +234,86 @@
         "description": "Put eggplants on a large baking tray, cut side down and bake at 200C (392F) for 30-40 minutes."
       },
       {
-        "description": "**Mince**: \n1. Fry the onions in the butter on high heat.\n2. Once the onions have started to caramelize, add the garlic and fry for a few more minutes.\n3. Add the cinnamon, cloves, allspice, black pepper and give it a stir.\n4. Add the mince and bay leaves and reduce heat to medium.\n5. Once the meat has started to brown, pour in the Metaxa.\n6. Add the tomato pureé, Sukrin Gold, bouillon base, and Worcestershire sauce and stir well.\n5. Reduce heat and simmer for about half an hour or until the tomato tastes cooked and any liquids have been reduced."
+        "description": "**Mince**: \n1. Fry the onions in the butter on high heat.\n2. Once the onions have started to caramelize, add the garlic and fry for a few more minutes.\n3. Add the cinnamon, cloves, allspice, black pepper and give it a stir.\n4. Add the mince and bay leaves and reduce heat to medium.\n5. Once the meat has started to brown, pour in the Metaxa.\n6. Add the tomato pure\u00e9, Sukrin Gold, bouillon base, and Worcestershire sauce and stir well.\n5. Reduce heat and simmer for about half an hour or until the tomato tastes cooked and any liquids have been reduced."
       },
       {
-        "description": "**Béchamel:**\n1. Melt the butter in a small pot over low heat\n2. Whisk in the coconut flour, stirring continuously to make a roux\n3. When the roux ingredients are nicely combined, whisk in the cream, adding a little each time to avoid lumps\n4. Cook it over low heat, stirring continuously\n5. When it has thickened, add nutmeg, salt, pepper to taste\n6. Take it off the heat and stir in the yolks and grated cheese"
+        "description": "**B\u00e9chamel:**\n1. Melt the butter in a small pot over low heat\n2. Whisk in the coconut flour, stirring continuously to make a roux\n3. When the roux ingredients are nicely combined, whisk in the cream, adding a little each time to avoid lumps\n4. Cook it over low heat, stirring continuously\n5. When it has thickened, add nutmeg, salt, pepper to taste\n6. Take it off the heat and stir in the yolks and grated cheese"
       },
       {
-        "description": "Scoop the minced meat into the eggplants, and top it with the béchamel. Bake for 10 minutes at 200C (392F), checking frequently because ovens vary. You may want to turn on the grill (US: broiler) for the last 5 minutes to give the cheese a nice golden brown."
+        "description": "Scoop the minced meat into the eggplants, and top it with the b\u00e9chamel. Bake for 10 minutes at 200C (392F), checking frequently because ovens vary. You may want to turn on the grill (US: broiler) for the last 5 minutes to give the cheese a nice golden brown."
       }
     ],
-    "tag": [
-      "Greek"
-    ],
+    "tag": ["Greek"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
-    "forked": "[Παπουτσάκια με μπεσαμέλ](https://akispetretzikis.com/el/categories/kreas/melitzanes-papoytsakia-me-mpesamel),\nMaria’s moussaka recipe,\n[Low carb roux,  béchamel and souffle](http://www.fatisourfriend.com/roux-bechamel-and-souffle.html)",
-    "ingredientGroup": [
+    "forked": "[\u03a0\u03b1\u03c0\u03bf\u03c5\u03c4\u03c3\u03ac\u03ba\u03b9\u03b1 \u03bc\u03b5 \u03bc\u03c0\u03b5\u03c3\u03b1\u03bc\u03ad\u03bb](https://akispetretzikis.com/el/categories/kreas/melitzanes-papoytsakia-me-mpesamel),\nMaria\u2019s moussaka recipe,\n[Low carb roux,  b\u00e9chamel and souffle](http://www.fatisourfriend.com/roux-bechamel-and-souffle.html)",
+    "ingredient": [
       {
-        "name": "Mince",
-        "ingredient": [
-          {
-            "preparation": "minced",
-            "amount": 2,
-            "name": "beef or lamb",
-            "unit": "lbs"
-          },
-          {
-            "preparation": "chopped",
-            "amount": 2,
-            "name": "yellow onions"
-          },
-          {
-            "preparation": "chopped",
-            "amount": 6,
-            "name": "garlic cloves"
-          },
-          {
-            "amount": 500,
-            "name": "passata (Italian-style sieved tomato purée)",
-            "unit": "g"
-          },
-          {
-            "preparation": "ground",
-            "name": "cinammon"
-          },
-          {
-            "preparation": "ground",
-            "name": "cloves"
-          },
-          {
-            "name": "allspice"
-          },
-          {
-            "amount": 4,
-            "name": "Better than Bouillon or other beef bouillon base",
-            "unit": "tsp"
-          },
-          {
-            "amount": 0.5,
-            "name": "Metaxa or other cognac",
-            "unit": "cup"
-          },
-          {
-            "amount": 2,
-            "name": "Sukrin Gold or brown sugar",
-            "unit": "tbsp"
-          },
-          {
-            "amount": 4,
-            "name": "bay leaves"
-          },
-          {
-            "name": "butter"
-          },
-          {
-            "name": "black pepper"
-          },
-          {
-            "name": "Worcestershire sauce"
-          }
-        ]
+        "preparation": "minced",
+        "amount": 2,
+        "name": "beef or lamb",
+        "unit": "lbs"
       },
       {
-        "name": "Béchamel(ish)",
+        "preparation": "chopped",
+        "amount": 2,
+        "name": "yellow onions"
+      },
+      {
+        "preparation": "chopped",
+        "amount": 6,
+        "name": "garlic cloves"
+      },
+      {
+        "amount": 500,
+        "name": "passata (Italian-style sieved tomato pur\u00e9e)",
+        "unit": "g"
+      },
+      {
+        "preparation": "ground",
+        "name": "cinammon"
+      },
+      {
+        "preparation": "ground",
+        "name": "cloves"
+      },
+      {
+        "name": "allspice"
+      },
+      {
+        "amount": 4,
+        "name": "Better than Bouillon or other beef bouillon base",
+        "unit": "tsp"
+      },
+      {
+        "amount": 0.5,
+        "name": "Metaxa or other cognac",
+        "unit": "cup"
+      },
+      {
+        "amount": 2,
+        "name": "Sukrin Gold or brown sugar",
+        "unit": "tbsp"
+      },
+      {
+        "amount": 4,
+        "name": "bay leaves"
+      },
+      {
+        "name": "butter"
+      },
+      {
+        "name": "black pepper"
+      },
+      {
+        "name": "Worcestershire sauce"
+      }
+    ],
+    "ingredientGroup": [
+      {
+        "name": "Mince"
+      },
+      {
+        "name": "B\u00e9chamel(ish)",
         "ingredient": [
           {
             "amount": 1,
@@ -474,7 +336,7 @@
           {
             "preparation": "grated",
             "amount": 250,
-            "name": "hard cheese (we used Gruyère)",
+            "name": "hard cheese (we used Gruy\u00e8re)",
             "unit": "g"
           },
           {
@@ -485,7 +347,7 @@
       }
     ],
     "ingr": "sauce",
-    "ingredient": [
+    "ingredient2": [
       {
         "amount": 3,
         "name": "eggplants"
@@ -502,35 +364,32 @@
     ]
   },
   {
-    "category": "beef",
+    "category": "seafood",
     "description": "Quick and garlicky!",
     "country": "Japan",
     "image": "http://forkgasm.com/images/gambas.png",
+    "amount": "2 cups",
+    "name": "Gambas al Ajillo",
     "step": [
       {
         "description": "In a large bowl, toss the shrimp with 1 teaspoon of kosher salt and let stand for 10 minutes. "
       },
       {
-        "description": "Meanwhile, in a 9- to 10-inch enameled cast-iron skillet, combine the garlic and olive oil and cook over moderately low heat, stirring occasionally, until the garlic is very fragrant and just starts to brown, 8 to  10 minutes. "
+        "description": "Meanwhile, in a 9- to 10-inch enameled cast-iron skillet, combine the garlic and olive oil and cook over moderately low heat, stirring occasionally, until the garlic is very fragrant and just starts to brown, 8 to \u202810 minutes. "
       },
       {
-        "description": "Add the chile and smoked paprika and cook, stirring, until fragrant, 15 to 30 seconds.  "
+        "description": "Add the chile and smoked paprika and cook, stirring, until fragrant, 15 to 30 seconds. \u2029"
       },
       {
         "description": "Add the shrimp to the skillet and cook over medium heat, stirring and turning the shrimp occasionally, until barely pink, about 5 minutes."
       },
       {
-        "description": "Stir in the parsley, sherry, lemon zest and a generous pinch of salt. Remove from the heat and let stand until the shrimp are cooked through, 3 to 5 minutes. Serve in the skillet, passing crusty bread at the table.  "
+        "description": "Stir in the parsley, sherry, lemon zest and a generous pinch of salt. Remove from the heat and let stand until the shrimp are cooked through, 3 to 5 minutes. Serve in the skillet, passing crusty bread at the table. \u2029"
       }
     ],
-    "name": "Gambas al Ajillo",
-    "amount": "2 cups",
-    "tag": [
-      "Seafood",
-      "Spanish"
-    ],
+    "tag": ["Seafood", "Spanish"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
-    "forked": "[Gambas al Ajillo ](http://www.foodandwine.com/recipes/gambas-al-ajillo),\n[Sizzling Shrimp with Garlic (Gambas al Pil Pil)](https://www.williams-sonoma.com/recipe/sizzling-shrimp-with-garlic-gambas-al-pil-pil.html)",
+    "forked": "[Gambas al Ajillo\u2029](http://www.foodandwine.com/recipes/gambas-al-ajillo),\n[Sizzling Shrimp with Garlic (Gambas al Pil Pil)](https://www.williams-sonoma.com/recipe/sizzling-shrimp-with-garlic-gambas-al-pil-pil.html)",
     "id": "gambas-al-ajillo",
     "ingr": "sauce",
     "ingredient": [
@@ -574,10 +433,10 @@
     ]
   },
   {
-    "category": "beef",
+    "category": "vegeterian",
     "description": "Breakfast of champions (one of them)",
     "country": "Japan",
-    "notes": "- The tomato sauce keeps for a couple of days in the fridge. If eating over two days, crack only 4 eggs. Next time, reheat sauce then make 4 more depressions and crack the other 4.\n- We use Sukrin Gold erythritol, which looks and tastes like light brown sugar. If not low-carbing, demarara or other sugar can be substituted.\n- Bell peppers are bad for absorbing pesticides, so we always use organic because the skin is eaten.\n- The type of red wine is not critical, honestly. We use small (187ml) “individual” bottles of fairly cheap red wine.",
+    "notes": "- The tomato sauce keeps for a couple of days in the fridge. If eating over two days, crack only 4 eggs. Next time, reheat sauce then make 4 more depressions and crack the other 4.\n- We use Sukrin Gold erythritol, which looks and tastes like light brown sugar. If not low-carbing, demarara or other sugar can be substituted.\n- Bell peppers are bad for absorbing pesticides, so we always use organic because the skin is eaten.\n- The type of red wine is not critical, honestly. We use small (187ml) \u201cindividual\u201d bottles of fairly cheap red wine.",
     "step": [
       {
         "description": "Heat oil in a large, deep, preferably ceramic, frying pan on medium heat"
@@ -589,7 +448,7 @@
         "description": "Add minced meat, stir until lightly browned"
       },
       {
-        "description": "Reduce heat a little, add jalapeño and bell pepper, cook until slightly soft. 3-4 min, do not overcook"
+        "description": "Reduce heat a little, add jalape\u00f1o and bell pepper, cook until slightly soft. 3-4 min, do not overcook"
       },
       {
         "description": "Add garlic and tomato concentrate, stir for 2 min until tomato tastes cooked not raw"
@@ -612,11 +471,7 @@
     ],
     "name": "Shakshuka",
     "amount": "2 cups",
-    "tag": [
-      "Arabic",
-      "Israeli",
-      "Breakfast"
-    ],
+    "tag": ["Arabic", "Israeli", "Breakfast"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "image": "http://forkgasm.com/images/shakshuka.jpg",
     "forked": "[Israeli Breakfast Of Champions: Shakshuka](http://www.foodrepublic.com/recipes/israeli-breakfast-of-champions-shakshuka/)",
@@ -648,7 +503,7 @@
       {
         "preparation": "deseeded & chopped",
         "amount": 1,
-        "name": "Jalapeño chilli"
+        "name": "Jalape\u00f1o chilli"
       },
       {
         "preparation": "minced",
@@ -721,7 +576,7 @@
     ]
   },
   {
-    "category": "beef",
+    "category": "chicken",
     "description": "Based on the original 1920's Italian-American table-side recipe",
     "country": "Japan",
     "image": "https://assets.marthastewart.com/styles/wmax-520-highdpi/d11/salad_00739/salad_00739_t_horiz.jpg?itok=vauCA-2P",
@@ -750,10 +605,7 @@
         "description": "If liked, garnish with more whole anchovies and/or Parmesan flakes"
       }
     ],
-    "tag": [
-      "Italian-American",
-      "Salad"
-    ],
+    "tag": ["Italian", "Salad"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "notes": "We don't use croutons but if you want them, go ahead!\nSauce keeps well in a fridge for a few days.\n",
     "forked": "[Classic Caesar Salad](https://www.bonappetit.com/recipe/classic-caesar-salad#recipe-ingredients)",
@@ -820,48 +672,48 @@
     "country": "Japan",
     "image": "https://www.fathead-movie.com/images/OlderBrother/FatHeadPizza2/finalproduct640x480.jpg",
     "amount": "2 cups",
+    "ingredient": [
+      {
+        "amount": 130,
+        "name": "almond flour",
+        "unit": "g"
+      },
+      {
+        "amount": 40,
+        "name": "nutritional yeast",
+        "unit": "g"
+      },
+      {
+        "preparation": "grated",
+        "amount": 330,
+        "name": "mozarella",
+        "unit": "g"
+      },
+      {
+        "preparation": "beaten",
+        "amount": 3,
+        "name": "eggs"
+      },
+      {
+        "amount": 4,
+        "name": "mascarpone",
+        "unit": "tbsp"
+      },
+      {
+        "preparation": "freshly ground",
+        "amount": 0.5,
+        "name": "cumin",
+        "unit": "tsp"
+      },
+      {
+        "amount": 0.5,
+        "name": "garlic powder",
+        "unit": "tsp"
+      }
+    ],
     "ingredientGroup": [
       {
-        "name": "Dough",
-        "ingredient": [
-          {
-            "amount": 130,
-            "name": "almond flour",
-            "unit": "g"
-          },
-          {
-            "amount": 40,
-            "name": "nutritional yeast",
-            "unit": "g"
-          },
-          {
-            "preparation": "grated",
-            "amount": 330,
-            "name": "mozarella",
-            "unit": "g"
-          },
-          {
-            "preparation": "beaten",
-            "amount": 3,
-            "name": "eggs"
-          },
-          {
-            "amount": 4,
-            "name": "mascarpone",
-            "unit": "tbsp"
-          },
-          {
-            "preparation": "freshly ground",
-            "amount": 0.5,
-            "name": "cumin",
-            "unit": "tsp"
-          },
-          {
-            "amount": 0.5,
-            "name": "garlic powder",
-            "unit": "tsp"
-          }
-        ]
+        "name": "Dough"
       },
       {
         "name": "Tomato sauce",
@@ -953,7 +805,7 @@
         "description": "Add cumin, garlic, salt, pepper."
       },
       {
-        "description": "Stir then microwave on HIGH for another minute. Repeat until it's soft, usually doesn’t need more than 2 minutes total."
+        "description": "Stir then microwave on HIGH for another minute. Repeat until it's soft, usually doesn\u2019t need more than 2 minutes total."
       },
       {
         "description": "Add the eggs and mix gently."
@@ -968,13 +820,13 @@
         "description": "Bake at 215C/420F for 15 minutes or until golden brown."
       },
       {
-        "description": "If you can manage to flip the pizza over without breaking it, flip it and bake a bit longer to make it crispy. If you’re worried it will break don't flip it, we never do and it’s fine!"
+        "description": "If you can manage to flip the pizza over without breaking it, flip it and bake a bit longer to make it crispy. If you\u2019re worried it will break don't flip it, we never do and it\u2019s fine!"
       },
       {
         "description": "While the base is baking, make the tomato sauce: in a mini-blender of food processor blend the tomato paste, garlic wine, basil, Worcestershire sauce, oregano. Cook at medium-low heat for 5-10 minutes or until thickened a bit."
       },
       {
-        "description": "While the base is baking and the sauce simmering, cut the bacon into 5mm lardons and sauté with the mushrooms until almost (but not completely) cooked to your liking."
+        "description": "While the base is baking and the sauce simmering, cut the bacon into 5mm lardons and saut\u00e9 with the mushrooms until almost (but not completely) cooked to your liking."
       },
       {
         "description": "Once the pizza base is done, spread the sauce over it as evenly as you can (a brush or rubber spatula helps). Then add the remaining grated cheeses, the bacon, the mushrooms, the pepper, the pineapple."
@@ -988,15 +840,15 @@
     "forked": "[Fat Head Pizza - The HOLY GRAIL Of Low Carb Pizzas ](https://www.ditchthecarbs.com/fat-head-pizza/)",
     "id": "fathead-pineapple-pizza",
     "ingr": "sauce",
-    "ingredient": []
+    "ingredient2": []
   },
   {
-    "category": "chicken",
+    "category": "pork",
     "description": "Not the most photogenic dish, but really easy, quick and delicious!",
     "country": "Japan",
     "image": "http://forkgasm.com/images/mushrooms.jpg",
     "amount": "2 cups",
-    "name": "Garlic mushrooms a la crème with lardons",
+    "name": "Garlic mushrooms a la cr\u00e8me with lardons",
     "step": [
       {
         "description": "Cut each strip of bacon into 4mm [lardons](https://en.wikipedia.org/wiki/Lardon)."
@@ -1034,7 +886,7 @@
     ],
     "tag": [],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
-    "notes": "- If you can find smoked cheddar, use a mixture of 50% smoked cheddar and 50% normal cheddar (it's very strong so not 100%). \n- Don’t allow the cream to overcook or it will separate!\n- You can probably cook the pepper in with the mushrooms and ignore the coconut oil, if desired.",
+    "notes": "- If you can find smoked cheddar, use a mixture of 50% smoked cheddar and 50% normal cheddar (it's very strong so not 100%). \n- Don\u2019t allow the cream to overcook or it will separate!\n- You can probably cook the pepper in with the mushrooms and ignore the coconut oil, if desired.",
     "id": "garlic-mushrooms-a-la-creme-with-lardons-and-green-pepper",
     "ingr": "sauce",
     "ingredient": [
@@ -1104,15 +956,17 @@
     "description": "Rich and creamy, delicious on bread or even on its own",
     "country": "Japan",
     "image": "http://forkgasm.com/images/chicken-liver-pate.jpg",
+    "amount": "2 cups",
+    "name": "Chicken Liver P\u00e2t\u00e9",
     "step": [
       {
         "description": "Chop most of the onion but set a little aside for garnish"
       },
       {
-        "description": "Sauté garlic and onion in a bit of butter."
+        "description": "Saut\u00e9 garlic and onion in a bit of butter."
       },
       {
-        "description": "Add the livers and sauté on both sides until they have a bit color but are still pink inside. Season with salt and pepper."
+        "description": "Add the livers and saut\u00e9 on both sides until they have a bit color but are still pink inside. Season with salt and pepper."
       },
       {
         "description": "Add the Metaxa and let it steam away."
@@ -1124,12 +978,7 @@
         "description": "Put aside in fridge for at least 4 hours and serve, garnishing with the balsamic reduction, parsley and the onion from step 1."
       }
     ],
-    "name": "Chicken Liver Pâté",
-    "amount": "2 cups",
-    "tag": [
-      "Chicken",
-      "Offal"
-    ],
+    "tag": ["Chicken", "Offal"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "forked": "Original recipe by Lea Dam Jensen",
     "id": "chicken-liver-pate",
@@ -1179,7 +1028,7 @@
     ]
   },
   {
-    "category": "chicken",
+    "category": "seafood",
     "description": "A traditional Greek dish (Htapodi Krasato).",
     "name": "Octopus in Wine",
     "country": "Japan",
@@ -1206,14 +1055,10 @@
         "description": "Once it's reduced and the octopus and vegetables are tender add 1tbsp olive oil, mix, and serve! Makes about 6 portions."
       }
     ],
-    "tag": [
-      "Greek",
-      "Stew",
-      "Seafood"
-    ],
+    "tag": ["Greek", "Stew", "Seafood"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
-    "notes": "The original version uses potatoes, but we have used turnips, okra and other vegetables with good success. Turnips also make the dish low carb. The one in the photo uses okra.\nΧταπόδι κρασάτο is the Greek name.",
-    "forked": "[Χταπόδι κρασάτο: ξεχωριστός μεζές με τρία μόνο υλικά!](https://www.cretangastronomy.gr/2013/04/%CF%87%CF%84%CE%B1%CF%80%CF%8C%CE%B4%CE%B9-%CE%BA%CF%81%CE%B1%CF%83%CE%AC%CF%84%CE%BF-%CE%BE%CE%B5%CF%87%CF%89%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%82-%CE%BC%CE%B5%CE%B6%CE%AD%CF%82-%CE%BC%CE%B5-%CF%84-2/)",
+    "notes": "The original version uses potatoes, but we have used turnips, okra and other vegetables with good success. Turnips also make the dish low carb. The one in the photo uses okra.\n\u03a7\u03c4\u03b1\u03c0\u03cc\u03b4\u03b9 \u03ba\u03c1\u03b1\u03c3\u03ac\u03c4\u03bf is the Greek name.",
+    "forked": "[\u03a7\u03c4\u03b1\u03c0\u03cc\u03b4\u03b9 \u03ba\u03c1\u03b1\u03c3\u03ac\u03c4\u03bf: \u03be\u03b5\u03c7\u03c9\u03c1\u03b9\u03c3\u03c4\u03cc\u03c2 \u03bc\u03b5\u03b6\u03ad\u03c2 \u03bc\u03b5 \u03c4\u03c1\u03af\u03b1 \u03bc\u03cc\u03bd\u03bf \u03c5\u03bb\u03b9\u03ba\u03ac!](https://www.cretangastronomy.gr/2013/04/%CF%87%CF%84%CE%B1%CF%80%CF%8C%CE%B4%CE%B9-%CE%BA%CF%81%CE%B1%CF%83%CE%AC%CF%84%CE%BF-%CE%BE%CE%B5%CF%87%CF%89%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%82-%CE%BC%CE%B5%CE%B6%CE%AD%CF%82-%CE%BC%CE%B5-%CF%84-2/)",
     "id": "octopus-in-wine",
     "ingr": "sauce",
     "ingredient": [
@@ -1252,7 +1097,7 @@
     ]
   },
   {
-    "category": "chicken",
+    "category": "seafood",
     "description": "Tender, refreshing and very easy to make",
     "country": "Japan",
     "image": "http://forkgasm.com/images/salmon-sous-vide.jpg",
@@ -1263,10 +1108,10 @@
         "description": "In a small saucepan over medium-high heat, combine the soy sauce, erythritol, ginger, garlic, mirin and sesame oil. Bring to a simmer, stirring until the erythritol has dissolved, about 1 minute. Let cool to room temperature. Reserve 1/4 cup (2 fl. oz./60 ml) of the sauce."
       },
       {
-        "description": "Place the salmon fillets in separate zip lock bags and pour the remaining sauce into the bags, dividing evenly. If you have time you can let them marinate for 1-4 hours, but you don’t have to."
+        "description": "Place the salmon fillets in separate zip lock bags and pour the remaining sauce into the bags, dividing evenly. If you have time you can let them marinate for 1-4 hours, but you don\u2019t have to."
       },
       {
-        "description": "Prepare a sous vide immersion circulator for use according to the manufacturer’s instructions. Preheat the water to 122°F (50°C). Place the bags into the circulating water and cook for 40 minutes for medium doneness."
+        "description": "Prepare a sous vide immersion circulator for use according to the manufacturer\u2019s instructions. Preheat the water to 122\u00b0F (50\u00b0C). Place the bags into the circulating water and cook for 40 minutes for medium doneness."
       },
       {
         "description": "5 minutes before the salmon is done, stir fry the bean sprouts in a large pan with a tsp of sesame oil and a splash of soy sauce. Divide evenly in two plates."
@@ -1278,11 +1123,7 @@
         "description": "Garnish with the sliced spring onion and serve!"
       }
     ],
-    "tag": [
-      "Asian",
-      "Seafood",
-      "Sous Vide"
-    ],
+    "tag": ["Asian", "Seafood", "Sous Vide"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "notes": "Not low carbing? You can use brown sugar in place of erythritol.",
     "forked": "[Sous Vide Salmon Teriyaki](https://www.williams-sonoma.com/recipe/sous-vide-salmon-teriyaki.html)",
@@ -1336,7 +1177,7 @@
     ]
   },
   {
-    "category": "chicken",
+    "category": "vegeterian",
     "name": "Sfouggato",
     "country": "Japan",
     "image": "http://forkgasm.com/images/sfouggato.png",
@@ -1359,12 +1200,10 @@
         "description": "Spread on a deep, oiled baking tray and bake at 180-200C (350-390F) for about 40 minutes or until golden."
       }
     ],
-    "tag": [
-      "Greek"
-    ],
+    "tag": ["Greek"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
-    "notes": "- Graviera is a Greek hard light yellow cheese. Can’t find graviera? Use any yellow cheese that melts. The sfouggato in this photo was actually made with cheddar!\n- Don’t have all the ingredients? Worry not! This is a dish with many variations. Most of the ingredients are optional. What is absolutely mandatory is the eggs, zucchinis, some herbs (parsley, dill, and/or mint), some kind of cheese, and some kind of onion (only red onion or only spring onion is ok).",
-    "forked": "[Σφουγγάτο το Μυτιληνιό](https://akispetretzikis.com/el/categories/almyres-pites-tartes/sfoyggato-to-mytilhnio), [Σφουγγάτο Μυτιλήνης με κολοκυθάκια](https://www.madameginger.com/syntages/syntages-mageirikis/ayga/sfouggato-mutilinis/)",
+    "notes": "- Graviera is a Greek hard light yellow cheese. Can\u2019t find graviera? Use any yellow cheese that melts. The sfouggato in this photo was actually made with cheddar!\n- Don\u2019t have all the ingredients? Worry not! This is a dish with many variations. Most of the ingredients are optional. What is absolutely mandatory is the eggs, zucchinis, some herbs (parsley, dill, and/or mint), some kind of cheese, and some kind of onion (only red onion or only spring onion is ok).",
+    "forked": "[\u03a3\u03c6\u03bf\u03c5\u03b3\u03b3\u03ac\u03c4\u03bf \u03c4\u03bf \u039c\u03c5\u03c4\u03b9\u03bb\u03b7\u03bd\u03b9\u03cc](https://akispetretzikis.com/el/categories/almyres-pites-tartes/sfoyggato-to-mytilhnio), [\u03a3\u03c6\u03bf\u03c5\u03b3\u03b3\u03ac\u03c4\u03bf \u039c\u03c5\u03c4\u03b9\u03bb\u03ae\u03bd\u03b7\u03c2 \u03bc\u03b5 \u03ba\u03bf\u03bb\u03bf\u03ba\u03c5\u03b8\u03ac\u03ba\u03b9\u03b1](https://www.madameginger.com/syntages/syntages-mageirikis/ayga/sfouggato-mutilinis/)",
     "id": "sfouggato",
     "ingr": "sauce",
     "ingredient": [
@@ -1430,51 +1269,47 @@
     ]
   },
   {
-    "category": "chicken",
+    "category": "beef",
     "name": "Khoresht Karafs",
     "country": "Japan",
     "image": "http://4.bp.blogspot.com/-cQ-SZw0C6yM/U0cxJZXSqbI/AAAAAAAAElQ/7yj2bMF2chg/s1600/khoresh+karafs.jpg",
     "description": "A delicious Persian stew with beef and celery.",
+    "amount": "2 cups",
     "step": [
       {
-        "description": "Wash the mint and parsley and make sure they are *completely dry*. A salad spinner helps, if you don’t have one you can use paper towels."
+        "description": "Wash the mint and parsley and make sure they are *completely dry*. A salad spinner helps, if you don\u2019t have one you can use paper towels."
       },
       {
-        "description": "Finely chop the mint and parsley, then sauté until just starting to turn crispy. Set aside."
+        "description": "Finely chop the mint and parsley, then saut\u00e9 until just starting to turn crispy. Set aside."
       },
       {
-        "description": "Sauté the onion with enough butter or oil until golden"
+        "description": "Saut\u00e9 the onion with enough butter or oil until golden"
       },
       {
-        "description": "Add the garlic and sauté for 1-2 more minutes"
+        "description": "Add the garlic and saut\u00e9 for 1-2 more minutes"
       },
       {
-        "description": "Add the turmeric and sauté for 2 more minutes"
+        "description": "Add the turmeric and saut\u00e9 for 2 more minutes"
       },
       {
-        "description": "Add the beef cubes and sauté until browned on the outside"
+        "description": "Add the beef cubes and saut\u00e9 until browned on the outside"
       },
       {
-        "description": "Pour in the beef stock and sautéed mint and parsley and simmer"
+        "description": "Pour in the beef stock and saut\u00e9ed mint and parsley and simmer"
       },
       {
-        "description": "In a separate pan, sauté the celery until *just* starting to turn brown. Set aside."
+        "description": "In a separate pan, saut\u00e9 the celery until *just* starting to turn brown. Set aside."
       },
       {
-        "description": "After the stew has been simmering for 1.5 hour, pour in the sautéed celery and simmer for another 30 minutes. This is done so that the celery doesn’t become too mushy."
+        "description": "After the stew has been simmering for 1.5 hour, pour in the saut\u00e9ed celery and simmer for another 30 minutes. This is done so that the celery doesn\u2019t become too mushy."
       },
       {
         "description": "Finish with the lemon juice and serve."
       }
     ],
-    "amount": "2 cups",
-    "tag": [
-      "Stew",
-      "Persian",
-      "Beef"
-    ],
+    "tag": ["Stew", "Persian", "Beef"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
-    "forked": "Elika’s family recipe",
+    "forked": "Elika\u2019s family recipe",
     "id": "khoresht-karafs",
     "ingr": "sauce",
     "ingredient": [
@@ -1532,46 +1367,46 @@
     ]
   },
   {
-    "category": "chicken",
+    "category": "dessert",
     "name": "No-Bake Strawberry Cheesecake",
     "country": "Japan",
     "image": "http://forkgasm.com/images/cheesecake.png",
     "description": "A delicious low carb treat!",
     "amount": "2 cups",
+    "ingredient": [
+      {
+        "amount": 1.5,
+        "name": "almond flour",
+        "unit": "cup"
+      },
+      {
+        "amount": 200,
+        "name": "butter or ghee",
+        "unit": "g"
+      },
+      {
+        "amount": 3,
+        "name": "brown sugar substitute",
+        "unit": "tbsp"
+      },
+      {
+        "amount": 4,
+        "name": "vanilla extract",
+        "unit": "tbsp"
+      },
+      {
+        "amount": 1,
+        "name": "cinammon",
+        "unit": "tsp"
+      },
+      {
+        "amount": "A pinch",
+        "name": "salt"
+      }
+    ],
     "ingredientGroup": [
       {
-        "name": "Base",
-        "ingredient": [
-          {
-            "amount": 1.5,
-            "name": "almond flour",
-            "unit": "cup"
-          },
-          {
-            "amount": 200,
-            "name": "butter or ghee",
-            "unit": "g"
-          },
-          {
-            "amount": 3,
-            "name": "brown sugar substitute",
-            "unit": "tbsp"
-          },
-          {
-            "amount": 4,
-            "name": "vanilla extract",
-            "unit": "tbsp"
-          },
-          {
-            "amount": 1,
-            "name": "cinammon",
-            "unit": "tsp"
-          },
-          {
-            "amount": "A pinch",
-            "name": "salt"
-          }
-        ]
+        "name": "Base"
       },
       {
         "name": "Cream",
@@ -1638,14 +1473,12 @@
         "description": "Chill in the fridge for at least 3 hours, then enjoy!"
       }
     ],
-    "tag": [
-      "Dessert"
-    ],
+    "tag": ["Dessert"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "notes": "- We use Sukrin Gold and Sukrin Icing for sweetening. We've tried many and think those are as close as it gets to the sugar equivalents and have no aftertaste.\n- You can use less mascarpone, the middle layer will just be less thick. Adjust the rest of the quantities accordingly in that case.",
     "id": "cheesecake",
     "ingr": "sauce",
-    "ingredient": []
+    "ingredient2": []
   },
   {
     "category": "beef",
@@ -1656,54 +1489,7 @@
     "amount": "2 cups",
     "ingredientGroup": [
       {
-        "name": "Curry paste",
-        "ingredient": [
-          {
-            "preparation": "stemmed and seeded",
-            "amount": 2,
-            "name": "dried guajillo chillies"
-          },
-          {
-            "amount": 0.5,
-            "name": "kosher salt",
-            "unit": "tsp"
-          },
-          {
-            "preparation": "bottom 4\" only, tough outer layer removed, cut into 1\" pieces",
-            "amount": 1,
-            "name": "lemongrass stalk"
-          },
-          {
-            "amount": 1,
-            "name": "garlic head"
-          },
-          {
-            "amount": 1,
-            "name": "peeled fresh ginger",
-            "unit": "tbsp"
-          },
-          {
-            "amount": 2,
-            "name": "galangal powder",
-            "unit": "tsp"
-          },
-          {
-            "amount": 2,
-            "name": "peeled fresh turmeric",
-            "unit": "tbsp"
-          },
-          {
-            "preparation": "chopped",
-            "amount": 0.5,
-            "name": "shallots",
-            "unit": "cup"
-          },
-          {
-            "amount": 1,
-            "name": "Thai shrimp paste",
-            "unit": "tbsp"
-          }
-        ]
+        "name": "Curry paste"
       }
     ],
     "step": [
@@ -1723,11 +1509,7 @@
         "description": "Garnish with cilantro and basil."
       }
     ],
-    "tag": [
-      "Thai",
-      "Stew",
-      "Beef"
-    ],
+    "tag": ["Thai", "Stew", "Beef"],
     "video": "https://www.youtube.com/watch?time_continue=1&v=kLvzBP2jk9k",
     "forked": "[Curried Beef Stew](https://www.epicurious.com/recipes/food/views/curried-beef-stew-380591)",
     "id": "curried-beef-stew",
