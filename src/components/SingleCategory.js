@@ -16,13 +16,13 @@ class singleCategory extends React.Component {
       <div onClick={this.selecteMe} className="categoryLink">
         <Link to={link}>
           <img
-            src="https://forkgasm.com/images/grand-marnier-ice-cream.jpg"
-            data-category={this.props.data}
+            src={this.props.imgPath}
+            data-category={this.props.name}
             onClick={this.selectCateg.bind(this)}
           />
         </Link>
         <div>
-          <strong>{this.props.data ? this.props.data : "All"}</strong>
+          <strong>{this.props.name ? this.props.name : "All"}</strong>
         </div>
       </div>
     );

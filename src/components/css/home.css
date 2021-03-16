@@ -1,185 +1,178 @@
-
 .rotate {
-    transform: rotate(90deg) translatey(-0.3vw);
+  transform: rotate(90deg) translatey(-0.3vw);
 }
 
 .headblock {
-    margin-top:10vw;
-    padding-right:5vw;
-    padding-left:10vw;
-    margin-bottom:5vw;
+  margin-top: 10vw;
+  padding-right: 5vw;
+  padding-left: 10vw;
+  margin-bottom: 5vw;
 }
 
 h1 {
-    font-weight: 900 !important;
+  font-weight: 900 !important;
 }
 
 .headblock img {
-    position: relative;
-    width:50vw;
+  position: relative;
+  width: 50vw;
 }
 
 .categoryBtn {
-    position: absolute;
-    bottom:0vw !important;
-    left:10vw;
-    background:#f9982d;
-    color:white;
-    border-radius: 0.8rem;
-    border:none;
-    height:3vw;
-    width:10vw;
-    font-weight: 600;
+  position: absolute;
+  bottom: 0vw !important;
+  left: 10vw;
+  background: #f9982d;
+  color: white;
+  border-radius: 0.8rem;
+  border: none;
+  height: 3vw;
+  width: 10vw;
+  font-weight: 600;
 }
 
 .categories {
-    position: relative;
-    /* width:100vw; */
-    padding-right:10vw;
-    padding-left:10vw;
-    margin-bottom:5vw;
+  position: relative;
+  padding-right: 10vw;
+  padding-left: 10vw;
+  margin-bottom: 5vw;
 }
 
 .categories img {
-    width:18vw;
-    padding:0 !important;
-    margin-top:3vw;
+  width: 22vw;
+  min-height: 16vw;
+  max-height: 16vw;
+  padding: 0 !important;
+  margin-top: 3vw;
 }
 
 .categoryLink strong {
-    font-size:1.5vw;
+  font-size: 1.5vw;
 }
 
 .about {
-    padding-left: 5vw;
-    padding-right: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
-.dash{
-    background:black;
-    width: 9vw;
-    height: 0.2rem;
+.dash {
+  background: black;
+  width: 9vw;
+  height: 0.2rem;
 }
 
 h2 {
-    font-size: 2.2vw;
+  font-size: 2.2vw;
 }
 
 .abouttxt {
-    margin-top:5vw;
-    font-size: 1.1vw;
-    width:29vw;
+  margin-top: 5vw;
+  font-size: 1.1vw;
+  width: 29vw;
 }
 
 .dash-cont {
-    background:black;
-    width: 7.5vw;
-    height: 0.2rem;
+  background: black;
+  width: 7.5vw;
+  height: 0.2rem;
 }
 
-
 .contact form {
-    margin-top: 2vw;
+  margin-top: 2vw;
 }
 
 .contact button {
-    background:#f9982d;
-    border:none;
-    margin-bottom:4vw;
+  background: #f9982d;
+  border: none;
+  margin-bottom: 4vw;
 }
 
 .formHeight {
-    height:24vw;
+  height: 24vw;
 }
 
 .sent {
-    height:24vw;
+  height: 24vw;
 }
 
 .team {
-    margin-top:5vw;
-    height:23vw;
-    margin-bottom:8vw;
+  margin-top: 5vw;
+  height: 23vw;
+  margin-bottom: 8vw;
 }
 
+@media screen and (max-width: 500px) {
+  .headblock p {
+    font-size: 2.8vw !important;
+  }
 
+  .headblock {
+    height: 110vw;
+    margin-bottom: 5vw;
+  }
 
-@media screen and (max-width:500px) {
+  .headblock img {
+    width: 80vw;
+    margin-bottom: 5vw;
+  }
 
-    .headblock p {
-        font-size: 2.8vw !important;
-    }
+  .headblock button {
+    bottom: -2vw !important;
+    width: 80vw;
+    height: 10vw;
+  }
 
-    .headblock {
-        height:110vw;
-        margin-bottom: 5vw;
-    }
+  .categoryLink strong {
+    font-size: 5vw !important;
+  }
 
-    .headblock img {
-        width:80vw;
-        margin-bottom: 5vw;
-    }
+  .categories img {
+    width: 80vw;
+  }
 
-    .headblock button {
-        bottom:-2vw !important;
-        width:80vw;
-        height:10vw;
-    }
+  .about img {
+    width: 90vw;
+    height: 60vw;
+  }
 
-    .categoryLink strong {
-        font-size:5vw !important;
-    }
+  .form-control {
+    width: 92vw !important;
+  }
 
-    .categories img {
-        width:80vw;
-    }
+  .abouttxt {
+    width: 90vw !important;
+    font-size: 2vw;
+  }
 
-    .about img {
-        width:90vw;
-        height:60vw;
-    }
-    
-    .form-control {
-        width:92vw !important;
-    }
+  .headblock p {
+    font-size: 3vw;
+  }
+  .categories img {
+    width: 80vw;
+  }
 
-    .abouttxt {
-        width:90vw !important;
-        font-size: 2vw;
-    }
-
-    .headblock p {
-        font-size: 3vw;
-    }
-    .categories img {
-        width:80vw;
-    }
-
-    h2 {
-        font-size: 4vw;
-        justify-content: center;
-        margin:auto;
-    }
-    
+  h2 {
+    font-size: 4vw;
+    justify-content: center;
+    margin: auto;
+  }
 }
 
-@media screen and (min-width:500px) and (max-width:800px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .mainDescr {
+    font-size: 1.5vw;
+  }
 
-    .mainDescr {
-        font-size: 1.5vw;
-    }
-
-    .categoryBtn {
-        position: absolute;
-        bottom:0vw !important;
-        left:10vw;
-        background:#f9982d;
-        color:white;
-        border-radius: 0.8rem;
-        border:none;
-        height:3vw;
-        width:14vw;
-        font-weight: 600;
-    }
-
+  .categoryBtn {
+    position: absolute;
+    bottom: 0vw !important;
+    left: 10vw;
+    background: #f9982d;
+    color: white;
+    border-radius: 0.8rem;
+    border: none;
+    height: 3vw;
+    width: 14vw;
+    font-weight: 600;
+  }
 }

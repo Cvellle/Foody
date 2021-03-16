@@ -1,8 +1,15 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Row, Col } from "reactstrap";
+
+import chickenImg from "../images/meals/caesar-salad.jpg";
+import beefImg from "../images/meals/curried-beef-stew.jpg";
+import porkImg from "../images/meals/carbonara.jpg";
+import vegeterianImg from "../images/meals/sfouggato.png";
+import seaFoodImg from "../images/meals/gambas.png";
+import allMeals from "../images/meals/allMeals.jpg";
 import SingleCategory from "../components/SingleCategory";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col } from "reactstrap";
 import { homeSrollAction } from "../store/actions";
 import headimg from "../images/himg.png";
 import team from "../images/team.jpg";
@@ -60,11 +67,15 @@ class Home extends React.Component {
               <div>
                 <h1 className="align-self-center">Food Recipes</h1>
                 <p className="align-self-center mainDescr">
-                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                  Food is as healthier as it contains more colors.
                   <br />
-                  Loremlin ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br />
-                  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem <br />
-                  ipsum Lorem ipsum Lorem ipsum
+                  Cooking is more than just a necessity. It is a creative
+                  process.
+                  <br />
+                  It reliefs you from stress, and you enjoy it's visual
+                  aesthetics also.
+                  <br />
+                  Play with food, and live healthy.
                 </p>
               </div>
             </Col>
@@ -85,23 +96,23 @@ class Home extends React.Component {
         <div className="categories" ref="category" id="category">
           <Row>
             <Col xs="12" sm="4">
-              <SingleCategory data="" />
+              <SingleCategory name="" imgPath={allMeals} />
             </Col>
             <Col xs="12" sm="4">
-              <SingleCategory data="Beef" className="" />
+              <SingleCategory name="Beef" imgPath={beefImg} />
             </Col>
             <Col xs="12" sm="4">
-              <SingleCategory data="Chicken" className="" />
+              <SingleCategory name="Chicken" imgPath={chickenImg} />
             </Col>
             <Col xs="12" sm="4">
-              <SingleCategory data="Vegeterian" className="" />
+              <SingleCategory name="Vegeterian" imgPath={vegeterianImg} />
             </Col>
             <Col xs="12" sm="4">
-              <SingleCategory data="Seafood" className="" />
+              <SingleCategory name="Seafood" imgPath={seaFoodImg} />
             </Col>
             <Col xs="12" sm="4">
               {" "}
-              <SingleCategory data="Pork" />
+              <SingleCategory name="Pork" imgPath={porkImg} />
             </Col>
           </Row>
         </div>
@@ -111,18 +122,20 @@ class Home extends React.Component {
           <div class="dash mx-auto mx-md-0"></div>
           <div class="d-md-flex justify-content-md-between">
             <div className="text-left abouttxt">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-              BC. This book is a treatise on the theory of ethics, very popular
-              during the Renaissance. The first line of Lorem Ipsum, "Lorem
-              ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              We are dedicated to today's passionate food lover. For food
+              people, by food people, our portal is the answer to a growing
+              hunger for more content devoted to food and cooking in every
+              dimension from global cuisines to international travel, history
+              and unconventional how-to's. There are plenty of quick, simple,
+              and wholesome meals you can cook at home in less time than it
+              takes to travel to a restaurant or wait for a delivery. By cooking
+              for yourself, you can ensure that you and your family eat fresh,
+              wholesome meals. This can help you to look and feel healthier,
+              boost your energy, stabilize your weight and mood, and improve
+              your sleep and resilience to stress. And you don’t have to be an
+              accomplished chef. Whatever your abilities or experience as a
+              cook, you can learn to prepare quick and healthy meals that can
+              have real benefits for your mental and physical health.
             </div>
             <div className="">
               <img src={team} className="d-flex justify-content-end team" />
